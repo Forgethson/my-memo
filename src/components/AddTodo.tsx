@@ -16,6 +16,7 @@ function AddTodo({ addTodo }: AddTodoProps) {
         if (text.trim() === '') {
             return
         }
+        console.log('text=', text);
         addTodo(text) // 调用父组件传递过来的addTodo方法，将输入框的值作为参数传递过去
         setText('') // 清空输入框
     }

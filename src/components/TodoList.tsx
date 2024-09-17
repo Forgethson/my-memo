@@ -8,10 +8,9 @@ interface TodoListProps {
 }
 
 function TodoList({ todos, toggleTodo, deleteTodo }: TodoListProps) {
-
     return (
         <ol>
-            {todos.map(todo => {
+            {todos?.map(todo => {
                 return (
                     <TodoItem
                         key={todo.id}
